@@ -1,13 +1,15 @@
 <?php
+// Exemplo de arrays em PHP
 
-  // Exemplo de arrays
+$cursos = array("PHP", "HTML", "CSS");
 
-  $cursos = array("PHP", "HTML", "CSS");
+// Exibe o array completo
+print_r($cursos);
 
-  print_r($cursos);
-  print_r($cursos[1]);
+// Exibe o segundo elemento do array
+print_r($cursos[1]);
 
-  $cursos[] = "JS";
-  print_r($cursos);
-
+// Adiciona novo curso ao array
+$cursos[] = "JS";
+print_r($cursos);
 ?>
