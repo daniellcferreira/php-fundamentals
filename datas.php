@@ -1,15 +1,15 @@
 <?php
+// Exemplo de datas e horas em PHP
 
-  // Exemplo de datas em PHP
-  echo date("d\n");
-  echo date("m\n");
-  echo date("Y\n");
-  echo date("d-m-Y\n");
+echo date("d") . "\n";  // Dia
+echo date("m") . "\n";  // Mês
+echo date("Y") . "\n";  // Ano
+echo date("d-m-Y") . "\n";  // Data completa
 
-  // Exemplo de horas em PHP
-  echo date("H:i:s\n");
+// Exemplo de horas
+echo date("H:i:s") . "\n";  // Hora atual padrão
 
-  date_default_timezone_set("America/Sao_Paulo");
-  echo date("H:i:s\n");
+date_default_timezone_set("America/Sao_Paulo");
+echo date("H:i:s") . "\n";  // Hora com fuso horário de São Paulo
 
 ?>
