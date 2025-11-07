@@ -12,6 +12,20 @@ class ContaBancaria {
   private string $numeroConta;
   private float $saldo;
 
+  public function __construct(
+    string $banco,
+    string $nomeTitular,
+    string $numeroAgencia,
+    string $numeroConta,
+    float $saldo
+  ) {
+    $this->banco = $banco;
+    $this->nomeTitular = $nomeTitular;
+    $this->numeroAgencia = $numeroAgencia;
+    $this->numeroConta = $numeroConta;
+    $this->saldo = $saldo;
+  }
+
   public function exibirDadosConta(): array {
     return [
       'banco' => $this->banco,
@@ -22,8 +36,18 @@ class ContaBancaria {
     ];
   }
 
-  public function setBanco(string $banco): void {
-    $this->banco = $banco;
+  public function depositar(float $valor): string {
+    $this->saldo += $valor;
+    return 'Depósito realizado: R$' . number_format($valor, 2, ',', '.');
+  }
+
+  public function sacar(float $valor): string {
+    $this->saldo -= $valor;
+    return 'Saque realizado: R$' . number_format($valor, 2, ',', '.');
+  }
+
+  public function obterSaldo(): string {
+    return 'Saldo atual: R$' . number_format($this->saldo, 2, ',', '.');
   }
 
   public function getBanco(): string {
@@ -34,32 +58,16 @@ class ContaBancaria {
     return $this->nomeTitular;
   }
 
-  public function setNomeTitular(string $nomeTitular): void {
-    $this->nomeTitular = $nomeTitular;
-  }
-
   public function getNumeroAgencia(): string {
     return $this->numeroAgencia;
-  }
-
-  public function setNumeroAgencia(string $numeroAgencia): void {
-    $this->numeroAgencia = $numeroAgencia;
   }
 
   public function getNumeroConta(): string {
     return $this->numeroConta;
   }
 
-  public function setNumeroConta(string $numeroConta): void {
-    $this->numeroConta = $numeroConta;
-  }
-
   public function getSaldo(): float {
     return $this->saldo;
-  }
-
-  public function setSaldo(float $saldo): void {
-    $this->saldo = $saldo;
   }
 
 }
