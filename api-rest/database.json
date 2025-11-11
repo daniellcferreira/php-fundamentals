@@ -1,0 +1,62 @@
+[
+  {
+    "user_id": 1,
+    "username": "johndoe",
+    "user_email": "johndoe@me.com",
+    "user_status": 0
+  },
+  {
+    "user_id": 2,
+    "username": "janedoe",
+    "user_email": "janedoe@me.com",
+    "user_status": 1
+  },
+  {
+    "user_id": 3,
+    "username": "alice",
+    "user_email": "alice@me.com",
+    "user_status": 1
+  },
+  {
+    "user_id": 4,
+    "username": "bob",
+    "user_email": "bob@me.com",
+    "user_status": 0
+  },
+  {
+    "user_id": 5,
+    "username": "charlie",
+    "user_email": "charlie@me.com",
+    "user_status": 1
+  },
+  {
+    "user_id": 6,
+    "username": "david",
+    "user_email": "david@me.com",
+    "user_status": 0
+  },
+  {
+    "user_id": 7,
+    "username": "eve",
+    "user_email": "eve@me.com",
+    "user_status": 1
+  },
+  {
+    "user_id": 8,
+    "username": "frank",
+    "user_email": "frank@me.com",
+    "user_status": 0
+  },
+  {
+    "user_id": 9,
+    "username": "grace",
+    "user_email": "grace@me.com",
+    "user_status": 1
+  },
+  {
+    "user_id": 10,
+    "username": "harry",
+    "user_email": "harry@me.com",
+    "user_status": 0
+  }
+]
