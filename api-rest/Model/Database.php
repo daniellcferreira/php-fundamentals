@@ -2,16 +2,15 @@
 
 class Database
 {
-  // Retorna um array com os primeiros $limit registros do "banco de dados"
   public function select(int $limit): array
   {
     try {
-      $users = json_encode(file_get_contents(DATABASE_PATH), true); // Lê o conteúdo do arquivo JSON
-      $users = array_slice($users, 0, $limit); // Retorna apenas os primeiros $limit registros
-      return $users; // Retorna o array de usuários
+      // Corrigido: usar DATABASE_PATH e json_decode()
+      $users = json_decode(file_get_contents(DATABASE_PATH), true);
+      $users = array_slice($users, 0, $limit); 
+      return $users;
     } catch (Exception $e) {
       throw new Exception("Error fetching users: " . $e->getMessage());
     }
-    return false;  // Retorna false se ocorrer um erro
   }
 }

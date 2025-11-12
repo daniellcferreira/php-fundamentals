@@ -18,4 +18,4 @@ require ROOT_PATH . "/Controller/UserController.php";  // Inclui o controlador d
 
 $userController = new UserController();  // Cria uma instância do controlador de usuário
 $methodName = $uri[4] . "Action";  // Obtém o nome do método a ser chamado
-$user->{$methodName}();  // Chama o método correspondente
+$userController->{$methodName}();  // Chama o método correspondente

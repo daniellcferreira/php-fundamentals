@@ -1,0 +1,31 @@
+# Diretórios do Composer
+/vendor/
+composer.lock
+
+# Arquivos de configuração sensíveis
+Config/config.local.php
+.env
+
+# Logs e cache
+*.log
+*.cache
+/tmp/
+.cache/
+
+# Arquivos de sistema e IDEs
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários do servidor PHP
+*.swp
+*.swo
+*.bak
+
+# Arquivos gerados
+database.json
+
+# Ambiente XAMPP ou local
+xampp/
+htdocs/
