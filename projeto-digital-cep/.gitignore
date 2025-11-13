@@ -1,0 +1,29 @@
+# Ignora a pasta de dependências do Composer
+/vendor/
+
+# Ignora arquivos de cache e logs
+*.log
+.cache/
+.tmp/
+
+# Ignora arquivos de configuração locais
+.env
+.env.local
+.env.*.local
+
+# Ignora arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignora arquivos de IDEs e editores
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignora arquivos de backup
+*.bak
+*.old
+
+# Ignora diretórios de testes temporários
+/tests/tmp/

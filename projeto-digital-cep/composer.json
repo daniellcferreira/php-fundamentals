@@ -1,0 +1,17 @@
+{
+  "name": "dcfer/projeto-digital-cep",
+  "description": "busca de cep online",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "ProjetoDigitalCep\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Daniel Ferreira",
+      "email": "dcfer2017@gmail.com"
+    }
+  ],
+  "require": {}
+}
