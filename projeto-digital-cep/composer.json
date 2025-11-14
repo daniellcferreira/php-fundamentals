@@ -13,5 +13,7 @@
       "email": "dcfer2017@gmail.com"
     }
   ],
-  "require": {}
+  "require-dev": {
+    "phpunit/phpunit": "^11.5"
+  }
 }
