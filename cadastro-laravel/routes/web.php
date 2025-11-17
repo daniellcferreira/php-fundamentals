@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UsuarioController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', [UsuarioController::class, 'cadastrar']);
+Route::post('/salvar', [UsuarioController::class, 'salvar']);
